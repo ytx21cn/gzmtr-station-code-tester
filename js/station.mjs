@@ -21,7 +21,7 @@ Station.checkConflict = function (station1, station2) {
 			|| ((station1.code !== station2.code) && (station1.cnName === station2.cnName || station1.enName === station2.enName)); // OR: a station has two different station codes
 		
 		if (hasConflict) {
-			console.log("Conflict found: ");
+			console.log("!!! CONFLICT FOUND !!!");
 			station1.print();
 			station2.print();
 		}

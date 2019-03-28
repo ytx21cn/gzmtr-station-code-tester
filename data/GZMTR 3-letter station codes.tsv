@@ -87,7 +87,7 @@ Line	Code	Chinese	English
 4	DOC	东涌	Dongchong
 4	DIC	低涌	Dichong
 4	HAB	海傍	Haibang
-4	SHQ	石碁	Shiqi
+4	SQI	石碁	Shiqi
 4	GUQ	官桥	Guanqiao
 4	XIZ	新造	Xinzao
 4	HES	大学城南	Higher Education Mega Center S.
@@ -151,7 +151,7 @@ Line	Code	Chinese	English
 6	GTS	高塘石	Gaotangshi
 6	HBE	黄陂	Huangbei
 6	JIF	金峰	Jinfeng
-6	XIG	暹岗	Xiangang
+6	XIA	暹岗	Xiangang
 6	SUY	苏元	Suyuan
 6	LUG	萝岗	Luogang
 6	XIX	香雪	Xiangxue
@@ -225,10 +225,10 @@ Line	Code	Chinese	English
 14	WAC	旺村	Wangcun
 14	TCU	汤村	Tangcun
 14	ZLB	镇龙北	Zhenlongbei
-14	ZHL	镇龙	Zhenlong
+14	ZLO	镇龙	Zhenlong
 			
 21	ZLX	镇龙西	Zhenlongxi
-21	ZHL	镇龙	Zhenlong
+21	ZLO	镇龙	Zhenlong
 21	ZHX	中新	Zhongxin
 21	KEB	坑贝	Kengbei
 21	FEG	凤岗	Fenggang
@@ -282,5 +282,5 @@ THZ1	CFW	会展西	Canton Fair Complex West
 THZ1	CFM	会展中	Canton Fair Complex Middle
 THZ1	CFE	会展东	Canton Fair Complex East
 THZ1	PBS	琶洲大桥南	Pazhou Bridge South
-THZ1	PPA	琶洲塔	Pazhou Pagoda
+THZ1	PZP	琶洲塔	Pazhou Pagoda
 THZ1	WSW	万胜围	Wanshengwei

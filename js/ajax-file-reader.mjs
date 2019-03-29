@@ -8,7 +8,10 @@ const AjaxFileReader = (function () {
 		Object.freeze(this);
 	};
 	
-	// Source consulted for this part: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+	/* Source consulted for this part:
+		XMLHttpRequest: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+		Promise: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+	*/
 	function resolve(filePath, mimeType = plainTextMimeType) {
 		return new Promise(function (resolve) {
 			const xhr = new XMLHttpRequest();

@@ -51,3 +51,23 @@ Based on the rules above, code clashing may take place between some pairs of sta
 
 5. If the procedure above still does not resolve name clashing, go back to the station name in English and combine the appropriate letters, e.g.:
 	* **H**e**s**h**a** → **H**e **S**h**a** (河沙, Line 6) → **HSA**
+
+## The automated tester
+[The link to the tester page](./index.html)
+
+### My rationale
+1. Use `XMLHttpRequest` to create a file reader and read the data file
+2. Split the content line by line (delimiter: `\n`), and entry by entry (delimiter: `\t`)
+3. Construct three `Map`s to keep track of data read:
+	1. from station codes to station objects
+	2. from Chinese names to station codes
+	3. from English names to station codes
+4. When reading the data, check if there are conflicting entries, and add new entries that are not previously in the maps
+
+### Sources I have consulted
+* [`XMLHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+* [MIME](http://www.iana.org/assignments/media-types/media-types.xhtml)
+* [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* [`async` and `await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+* [JS modules](https://developers.google.com/web/fundamentals/primers/modules)
+* [Encapsulation](https://medium.com/front-end-weekly/achieving-complete-data-encapsulation-in-javascript-5454a6b7410b)

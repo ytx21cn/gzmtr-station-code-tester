@@ -4,10 +4,6 @@ import { tsvMimeType } from "./mime.mjs";
 import { AjaxFileReader } from "./ajax-file-reader.mjs";
 import { StationCodeMap } from "./station-code-map.mjs";
 
-const dataPath = "./data/GZMTR 3-letter station codes.tsv"; // relative to the path of index.html
-const displayArea = document.getElementById("js-code-display-area");
-
-const fileReader = new AjaxFileReader();
 
 function checkConflictingEntries(codes) {
 	if (!(typeof codes === "string")) {
@@ -19,6 +15,10 @@ function checkConflictingEntries(codes) {
 }
 
 async function process() {
+	const dataPath = "./data/GZMTR 3-letter station codes.tsv"; // relative to the path of index.html
+	const displayArea = document.getElementById("js-code-display-area");
+	const fileReader = new AjaxFileReader();
+
 	const text = await fileReader.readFile(dataPath, tsvMimeType);
 	displayArea.innerHTML = text;
 	checkConflictingEntries(text);
